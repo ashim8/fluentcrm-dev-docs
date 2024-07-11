@@ -1,0 +1,51 @@
+---
+title: Miscellaneous Filters
+description: A collection of all  Hooks Filter for FluentCRM.
+---
+
+<ol>
+<li>
+    ## Contact Import CSV Mimes
+
+    ```bash
+    Location: wp-content/plugins/fluent-crm/app/Functions/helpers.php
+    Line:     680
+    Version:  2.9.0
+    function fluentcrmCsvMimes()
+    ```
+
+    ```php
+    /**
+     * Contact Import CSV Mimes
+     *
+     * @return array array of CSV mimes
+     */
+    apply_filters('fluencrm_csv_mimes', [
+        'text/csv',
+        'text/plain',
+        'application/csv',
+        'text/comma-separated-values',
+        'application/excel',
+        'application/vnd.ms-excel',
+        'application/vnd.msexcel',
+        'text/anytext',
+        'application/octet-stream',
+        'application/txt'
+    ]);
+    ```
+</li>
+<li>
+    ## Menu URL Base
+
+    ```bash
+    Location: wp-content/plugins/fluent-crm/app/Functions/helpers.php
+    Line:     956
+    Version:  2.9.0
+    fluentcrm_menu_url_base()
+    ```
+
+    ```php
+    apply_filters('fluent_crm/menu_url_base', admin_url('admin.php?page=fluentcrm-admin#/'));
+    ```
+</li>
+</ol>

@@ -20,7 +20,7 @@ export default defineConfig({
 					label: 'Get Started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Start', slug: 'guides/start' },
+						{ label: 'Start', slug: 'index/start' },
 					],
 				},
 				{
@@ -32,12 +32,20 @@ export default defineConfig({
 					autogenerate: { directory: 'contacts' },
 				},
 				{
+					label: 'Company',
+					autogenerate: { directory: 'company' },
+				},
+				{
 					label: 'Emails',
 					autogenerate: { directory: 'emails' },
 				},
 				{
 					label: 'Automation',
 					autogenerate: { directory: 'automation' },
+				},
+				{
+					label: 'Miscellaneous',
+					autogenerate: { directory: 'misc' },
 				},
 				{
 					label: 'Glossary',
